@@ -11,7 +11,7 @@ Implement a web agent service that monitors a server.
 
 ## Routes
 
-### /status
+### `/status`
 
 Method: GET
 
@@ -27,7 +27,7 @@ Method: GET
 }
 ```
 
-### /cpus
+### `/cpus`
 
 List the cpus
 
@@ -44,7 +44,7 @@ Method: GET
 ]
 ```
 
-### /cpus/<cpu_number>
+### `/cpus/<cpu_number>`
 
 List the information about one cpu
 
@@ -59,7 +59,7 @@ Methods: GET
 }
 ```
 
-## /processes
+## `/processes`
 
 Return the list of processes PIDs
 
@@ -69,7 +69,7 @@ Return the list of processes PIDs
 ]
 ```
 
-## /processes/<pid>
+## `/processes/<pid>`
 
 Return information about a process
 
@@ -84,7 +84,7 @@ Return information about a process
 }
 ```
 
-## /processes/kill/<pid>
+## `/processes/kill/<pid>`
 
 Stop a process
 
@@ -95,7 +95,7 @@ Stop a process
 }
 ```
 
-## /processes/start
+## `/processes/start`
 
 Method POST
 
