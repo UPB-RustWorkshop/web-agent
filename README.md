@@ -61,13 +61,25 @@ Methods: GET
 
 ## `/processes`
 
-Return the list of processes PIDs
+Return the list of processes
 
 ```json
 [
-    1, 2, 3, 46, 110234, ...
+    {
+        "pid": 2100,
+        "ppid": 1000,
+        "command": "....",
+        "arguments": ["...", "..."],
+        "memory": {
+            "vsz": 1000,
+            "rss": 300
+        }
+    },
 ]
 ```
+
+> A quesry string might be supplied specifing the parameters to show. Ex: "?pid=true&memory=true" eturns only the pid and command.
+> Hint: Use `Option` in the structure.
 
 ## `/processes/<pid>`
 
@@ -116,6 +128,10 @@ Response
 ```json
 {
     "status": "ok or error",
-    "erroor": 0
+    "stdout": "",
+    "stderr": ""
+    "error": 0
 }
 ```
+
+> Modify the route to start the process and immediately return and add abother route that ca verify the status of the process and return the partial output and error streams.
