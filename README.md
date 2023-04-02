@@ -2,6 +2,11 @@
 
 Implement a web agent service that monitors a server.
 
+Use asynchornous IO with [tokio](https://tokio.rs/). Read the [tutorial](https://tokio.rs/tokio/tutorial) before starting the server.
+
+Integrate [Tokio Console](https://github.com/tokio-rs/console) for an overview of your tasks.
+
+
 ## Requitements
 
 1. Work in teams
