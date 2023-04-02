@@ -2,12 +2,12 @@
 
 Implement a web agent service that monitors a server.
 
-Use asynchornous IO with [tokio](https://tokio.rs/). Read the [tutorial](https://tokio.rs/tokio/tutorial) before starting the server.
+Use asynchronous IO with [tokio](https://tokio.rs/). Read the [tutorial](https://tokio.rs/tokio/tutorial) before starting the server.
 
 Integrate [Tokio Console](https://github.com/tokio-rs/console) for an overview of your tasks.
 
 
-## Requitements
+## Requirements
 
 1. Work in teams
 2. Use any way of solving the requests
@@ -83,7 +83,7 @@ Return the list of processes
 ]
 ```
 
-> A quesry string might be supplied specifing the parameters to show. Ex: "?pid=true&memory=true" eturns only the pid and command.
+> A query string might be supplied specifying the parameters to show. Ex: "?pid=true&memory=true" returns only the pid and command.
 > Hint: Use `Option` in the structure.
 
 ## `/processes/<pid>`
@@ -108,7 +108,7 @@ Stop a process
 ```json
 {
     "status": "ok or error",
-    "erroor": 0
+    "error": 0
 }
 ```
 
@@ -139,4 +139,4 @@ Response
 }
 ```
 
-> Modify the route to start the process and immediately return and add abother route that ca verify the status of the process and return the partial output and error streams.
+> Modify the route to start the process and immediately return and add another route that ca verify the status of the process and return the partial output and error streams.
